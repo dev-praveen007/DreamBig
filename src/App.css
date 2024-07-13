@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+  --gray_bg: #F9F9F9;
+  --black: #000;
+  --white: #fff;
+  --secondary_black: #3F3E3E;
+  --input_border: #282828;
+  --placeholder: #959595;
+  --navigation: #0081F9;
+  --secondary_navigation : #9EC5FE;
+  --dashboard_bg : #F0F6FF;
+  --news_input : #E4E4E4;
+  --timer : #8A8A8A;
+  --green : #14A44D;
+  --red : #DC4C64;
+  --bootstrap_red : #dc3545;
+  --bootstrap_green : #198754;
+  --slide_border : #00509B;
+  --img_uploader : #BCBCBC;
+  --slider_bg : #D9D9D9;
+  --lower_font: 8px;
+  --small_font: 10px;
+  --font_twelve: 12px;
+  --font_thirteen: 13px;
+  --font_fourteen: 14px;
+  --font_fifteen: 15px;
+  --font_sixtee: 16px;
+  --font_eighteen: 18px;
+  --font_twenty: 20px;
+  --font_twentyFour: 24px;
+  --highter_font: 25px;
+  --font_fifty: 50px;
+  --font_thirty : 30px;
+  --weight_four: 400;
+  --weight_five: 500;
+  --weight_six: 600;
+  --weight_seven: 700;
+  --weight_eight: 800;
+  --weight_nine: 900;
+  --form_label_color: #959595;
+
+  /* Focus ring */
+  --bs-focus-ring-color: rgb(255, 255, 255, 0);
+}
+
+/* common css */
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.cmn__bgAligner {
+  overflow-x: hidden;
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
+.fs-8 {
+  font-size: var(--lower_font);
+}
+
+.fs-10 {
+  font-size: var(--small_font);
+}
+
+.fs-12 {
+  font-size: var(--font_twelve);
+}
+
+.fs-13 {
+  font-size: var(--font_thirteen);
+}
+
+.fs-14 {
+  font-size: var(--font_fourteen);
+}
+
+.fs-15 {
+  font-size: var(--font_fifteen);
+}
+
+.fs-16 {
+  font-size: var(--font_sixtee);
+}
+
+.fs-18 {
+  font-size: var(--font_eighteen);
+}
+
+.fs-20 {
+  font-size: var(--font_twenty);
+}
+
+.fs-24 {
+  font-size: var(--font_twentyFour);
+}
+
+.fs-25 {
+  font-size: var(--highter_font);
+}
+
+.fs-50{
+  font-size: var(--font_fifty);
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+*{
+  font-family: "Oswald", sans-serif;
+}
+
+.Header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-ul ul {
+  font-size: 23px;
+}
+
+.Header-div img {
+  height: 70px;
+}
+
+.swiper-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  
+}
+
+.body-div{
+  margin: 0 230px;
+  /* height: 100vh; */
+}
+
+.center-text-div{
+  width: 45%;
+}
+
+.center-text-div .desc{
+  font-size: 24px;
+  font-weight: 350;
+}
+
+.underline {
+  width: 65px; /* Adjust the width as needed */
+  height: 4px; /* Adjust the height as needed */
+  background-color: #000; /* Adjust the color as needed */
+  margin: 10px auto 0;
+}
+
+.our_service .descp{
+  font-size: 24px;
+  font-weight: 350;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background: linear-gradient(180deg, #b6dafb 0%, var(--secondary_navigation) 50%, #b6dafb 100%); */
+  background-image: url('./assests/images/bg_image_back.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home-img{
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.home-left-letter{
+  letter-spacing: 5px;
+  font-weight: 400;
+  font-size: 55px;
+  margin-bottom: 0;
+}
