@@ -145,6 +145,10 @@
   font-weight: 900;
 }
 
+.b-radios-10{
+  border-radius: 10px;
+}
+
 *{
   font-family: "Oswald", sans-serif;
 }
@@ -162,11 +166,12 @@
 }
 
 .header-ul ul {
-  font-size: 23px;
+  margin-bottom: 0;
+  font-size: 17px;
 }
 
 .Header-div img {
-  height: 70px;
+  height: 45px;
 }
 
 .swiper-cont{
@@ -178,7 +183,7 @@
 }
 
 .body-div{
-  margin: 0 230px;
+  margin: 0 155px;
   /* height: 100vh; */
 }
 
@@ -187,8 +192,8 @@
 }
 
 .center-text-div .desc{
-  font-size: 24px;
-  font-weight: 350;
+  font-size: 18px;
+  font-weight: 330;
 }
 
 .underline {
@@ -199,8 +204,8 @@
 }
 
 .our_service .descp{
-  font-size: 24px;
-  font-weight: 350;
+  font-size: 18px;
+  font-weight: 330;
 }
 
 body {
@@ -216,11 +221,39 @@ body {
 .home-img{
   border-radius: 40px;
   object-fit: cover;
+  width: 280px;
 }
 
 .home-left-letter{
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   font-weight: 400;
-  font-size: 55px;
+  font-size: 35px;
   margin-bottom: 0;
+}
+
+.home-headings{
+  font-size: 38px;
+}
+
+.testimonals-text-container{
+  background-color: #ffff;
+  height: 394px;
+  width: 500px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.testimo-img{
+  height: 394px;
+  width: 394px;
+  border: 2px solid #ffff;
+  border-radius: 5%;
+  object-fit: cover;
+}
+
+.testimon-full-cont{
+  background: linear-gradient(180deg, #b6dafb00 0%, var(--secondary_navigation) 50%, #b6dafb 100%);
 }

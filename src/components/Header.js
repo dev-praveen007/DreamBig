@@ -3,7 +3,7 @@ import LogoImgg from '../assests/images/DB-studio.png';
 
 const Header = () => {
   return (  
-    <div className='Header-div px-5 py-5'>
+    <div className='Header-div px-5 py-4'>
       <img alt='Header' src={LogoImgg} />
       <li className='header-ul' >
         <ul>About</ul>

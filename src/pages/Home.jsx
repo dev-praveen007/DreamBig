@@ -7,6 +7,7 @@ import image4 from "../assests/images/imageee.webp";
 import { Col, Row } from "react-bootstrap";
 import { useEffect } from "react";
 import Aos from "aos";
+import Testimonals from "../components/Testimonals";
 
 function Home() {
   useEffect(() => {
@@ -30,7 +31,7 @@ function Home() {
             className="w-100 d-flex justify-content-center align-items-center "
             interval={2000}
           >
-            <img alt="FirstImg" className="img-fluid w-100" src={image2} />
+            <img alt="FirstImg" className="img-fluid w-100 b-radios-10" src={image2} />
 
             <Carousel.Caption>
               <h3>Second slide label</h3>
@@ -41,7 +42,7 @@ function Home() {
             className="w-100 d-flex justify-content-center align-items-center "
             interval={2000}
           >
-            <img alt="FirstImg" className="img-fluid w-100" src={image3} />
+            <img alt="FirstImg" className="img-fluid w-100 b-radios-10" src={image3} />
             <Carousel.Caption>
               <h3>Third slide label</h3>
               <p>
@@ -53,7 +54,7 @@ function Home() {
             className="w-100 d-flex justify-content-center align-items-center "
             interval={2000}
           >
-            <img alt="FirstImg" className="img-fluid w-100" src={image4} />
+            <img alt="FirstImg" className="img-fluid w-100 b-radios-10" src={image4} />
             <Carousel.Caption>
               <h3>Third slide label</h3>
               <p>
@@ -79,7 +80,7 @@ function Home() {
             data-aos="fade-up"
           >
             <div className="center-text-div">
-              <p className="fs-50 text-center">About us</p>
+              <p className="home-headings text-center">About us</p>
               <p className="mt-5 mb-0 lead text-center desc">
                 Established in 2015 by Manoj Nagarajan, Fifth Angle Studios has
                 an 8+year legacy, capturing over 1000+ weddings. Our steadfast
@@ -96,7 +97,7 @@ function Home() {
             data-aos="fade-up"
           >
             <div className="center-text-div">
-              <p className="fs-50 text-center">Our Mission</p>
+              <p className="home-headings text-center">Our Mission</p>
               <p className="mt-5 mb-0 lead text-center desc">
                 Our mission is to establish ourselves as a leading authority in
                 wedding filmmaking, and photography, ensuring that every event
@@ -116,7 +117,7 @@ function Home() {
             </div>
 
             <div className="center-text-div">
-              <p className="fs-50 text-center">Our Vision</p>
+              <p className="home-headings text-center">Our Vision</p>
               <p className="mt-5 mb-0 lead text-center desc">
                 Our vision is to become the first choice for couples and parents
                 in search of wedding or photography services. We aim to expand
@@ -136,7 +137,7 @@ function Home() {
             data-aos="fade-up"
           >
             <div className="mb-5 our_service">
-              <p className="fs-50 text-center">Our Services</p>
+              <p className="home-headings text-center">Our Services</p>
               <div className="underline"></div>
               <p className="mt-5 mb-0 lead text-center descp">
                 Fifth Angle Studios is already renowned for its expertise and
@@ -165,7 +166,7 @@ function Home() {
                   src={image1}
                   className="home-img img-fluid"
                 />
-                <p className="mt-3 text-center fs-24">Wedding Photos</p>
+                <p className="mt-3 text-center fs-18">Wedding Photos</p>
               </Col>
               <Col
                 md={4}
@@ -175,7 +176,7 @@ function Home() {
                 data-aos-duration="1000"
               >
                 <img alt="image" src={image1} className="home-img img-fluid" />
-                <p className="mt-3 text-center fs-24">Wedding Photos</p>
+                <p className="mt-3 text-center fs-18">Wedding Photos</p>
               </Col>
               <Col
                 md={4}
@@ -185,7 +186,7 @@ function Home() {
                 data-aos-duration="1000"
               >
                 <img alt="image" src={image1} className="home-img img-fluid" />
-                <p className="mt-3 text-center fs-24">Wedding Photos</p>
+                <p className="mt-3 text-center fs-18">Wedding Photos</p>
               </Col>
             </Row>
 
@@ -202,7 +203,7 @@ function Home() {
                   src={image1}
                   className="home-img img-fluid"
                 />
-                <p className="mt-3 text-center fs-24">Wedding Photos</p>
+                <p className="mt-3 text-center fs-18">Wedding Photos</p>
               </Col>
               <Col
                 md={4}
@@ -212,7 +213,7 @@ function Home() {
                 data-aos-duration="1000"
               >
                 <img alt="image" src={image1} className="home-img img-fluid" />
-                <p className="mt-3 text-center fs-24">Wedding Photos</p>
+                <p className="mt-3 text-center fs-18">Wedding Photos</p>
               </Col>
               <Col
                 md={4}
@@ -222,7 +223,7 @@ function Home() {
                 data-aos-duration="1000"
               >
                 <img alt="image" src={image1} className="home-img img-fluid" />
-                <p className="mt-3 text-center fs-24">Wedding Photos</p>
+                <p className="mt-3 text-center fs-18">Wedding Photos</p>
               </Col>
             </Row>
             <Row>
@@ -238,7 +239,7 @@ function Home() {
                   src={image1}
                   className="home-img img-fluid"
                 />
-                <p className="mt-3 text-center fs-24">Wedding Photos</p>
+                <p className="mt-3 text-center fs-18">Wedding Photos</p>
               </Col>
               <Col
                 md={4}
@@ -248,7 +249,7 @@ function Home() {
                 data-aos-duration="1000"
               >
                 <img alt="image" src={image1} className="home-img img-fluid" />
-                <p className="mt-3 text-center fs-24">Wedding Photos</p>
+                <p className="mt-3 text-center fs-18">Wedding Photos</p>
               </Col>
               <Col
                 md={4}
@@ -258,12 +259,14 @@ function Home() {
                 data-aos-duration="1000"
               >
                 <img alt="image" src={image1} className="home-img img-fluid" />
-                <p className="mt-3 text-center fs-24">Wedding Photos</p>
+                <p className="mt-3 text-center fs-18">Wedding Photos</p>
               </Col>
             </Row>
           </div>
         </div>
       </div>
+
+      <Testimonals />
     </>
   );
 }
