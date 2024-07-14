@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DreamBigStudio/static/css/main.061acd4d.css",
-    "main.js": "/DreamBigStudio/static/js/main.d1ad8aa7.js",
+    "main.js": "/DreamBigStudio/static/js/main.4b01f744.js",
     "static/js/453.2c919e48.chunk.js": "/DreamBigStudio/static/js/453.2c919e48.chunk.js",
     "static/media/bg_image_back.jpg": "/DreamBigStudio/static/media/bg_image_back.945a8bf0825b6a8af452.jpg",
     "static/media/jkskfd.webp": "/DreamBigStudio/static/media/jkskfd.bf0b3579ce36c99c12d3.webp",
@@ -11,11 +11,11 @@
     "static/media/DB-studio.png": "/DreamBigStudio/static/media/DB-studio.8cf3cdd88b84ae7d1256.png",
     "index.html": "/DreamBigStudio/index.html",
     "main.061acd4d.css.map": "/DreamBigStudio/static/css/main.061acd4d.css.map",
-    "main.d1ad8aa7.js.map": "/DreamBigStudio/static/js/main.d1ad8aa7.js.map",
+    "main.4b01f744.js.map": "/DreamBigStudio/static/js/main.4b01f744.js.map",
     "453.2c919e48.chunk.js.map": "/DreamBigStudio/static/js/453.2c919e48.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.061acd4d.css",
-    "static/js/main.d1ad8aa7.js"
+    "static/js/main.4b01f744.js"
   ]
 }
