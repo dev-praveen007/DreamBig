@@ -41,9 +41,10 @@ function Testimonals() {
   };
 
   return (
-    <div className="pt-5 pb-5 testimon-full-cont">
-      <h1 className="text-center pb-5" data-aos="fade-up">Testimonials</h1>
-      <div className="d-flex  justify-content-center align-items-center" data-aos="fade-up">
+    <div className="pt-5 pb-4 testimon-full-cont" data-aos="fade-up">
+      <h1 className="text-center ">Testimonials</h1>
+      <div className="underline mb-5"></div>
+      <div className="d-flex  justify-content-center align-items-center" >
         <Carousel
           fade
           className="w-100 d-flex justify-content-center align-items-center mb-5"
