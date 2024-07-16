@@ -239,11 +239,15 @@ body {
   background-color: #ffff;
   height: 394px;
   width: 500px;
-  border-radius: 5px;
+  border-radius: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.opacity-animation{
+  animation: 2s linear 0s 1 running opacityAnimation;
 }
 
 .testimo-img{
@@ -256,4 +260,43 @@ body {
 
 .testimon-full-cont{
   background: linear-gradient(180deg, #b6dafb00 0%, var(--secondary_navigation) 50%, #b6dafb 100%);
+}
+
+.testi-animation-rightt{
+  animation: 1s ease-in-out 0s 1 running testiAnimatRight;
+}
+
+.testi-animation-left{
+  animation: 1s ease-in-out 0s 1 running testiAnimatLeft;
+}
+
+@keyframes testiAnimatRight{
+  from{transform: translateX(-500px);}
+  to{transform: translateX(0);}
+  50%{
+    opacity: 0.1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes testiAnimatLeft{
+  from{transform: translateX(500px);}
+  to{transform: translateX(0);}
+  50%{
+    opacity: 0.1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes opacityAnimation {
+  10%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
