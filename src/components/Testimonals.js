@@ -33,23 +33,18 @@ function Testimonals() {
     },
   ];
 
-  const [activeIndex,setActiveIndex]=useState();
+  const [activeIndex, setActiveIndex] = useState();
 
   const handleSelect = (selectedIndex, e) => {
-    console.log('Slide started',selectedIndex);
-    setActiveIndex(selectedIndex)
+    console.log("Slide started", selectedIndex);
+    setActiveIndex(selectedIndex);
   };
 
   return (
-    <div className="pt-5 pb-4 testimon-full-cont" data-aos="fade-up">
-     {/* <div class="custom-shape-divider-bottom-1721451173">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-    </svg>
-</div> */}
-      <h1 className="text-center ">Testimonials</h1>
+    <div className="pt-5 pb-4 testimon-full-cont">
+      <h1 className="text-center text-white">Testimonials</h1>
       <div className="underline mb-5"></div>
-      <div className="d-flex  justify-content-center align-items-center" >
+      <div className="d-flex  justify-content-center align-items-center">
         <Carousel
           fade
           className="w-100 d-flex justify-content-center align-items-center mb-5"
@@ -58,7 +53,7 @@ function Testimonals() {
           pause={false}
           onSelect={handleSelect}
         >
-          {arr.map((val, i) =>
+          {/* {arr.map((val, i) =>
             i % 2 !== 0 ? (
               <Carousel.Item
                 className="w-100 d-flex justify-content-center align-items-center"
@@ -74,7 +69,7 @@ function Testimonals() {
                   </div>
                 </div>
                 <img alt="FirstImg" className={`testimo-img  ${activeIndex === i ? "testi-animation-left" :""}`} src={val.image} />
-              </Carousel.Item>
+      </Carousel.Item>
             ) : (
               <Carousel.Item
                 className="w-100 d-flex justify-content-center align-items-center "
@@ -90,9 +85,25 @@ function Testimonals() {
                     <p className="text-center fs-13 fw-600">{val.from}</p>
                   </div>
                 </div>
-              </Carousel.Item>
+      </Carousel.Item>
             )
-          )}
+          )} */}
+
+          {arr.map((val) => {
+            return (
+              <Carousel.Item className="w-100 d-flex justify-content-center align-items-center ">
+                <div className={`testimonals-text-container`}>
+                  <div className="w-100 test-div">
+                    <p className="testimo-text">{val.desc}</p>
+                    <p className="testimo-name">
+                      - {val.name}
+                    </p>
+                    <p className=" testimo-desc" >{val.from}</p>
+                  </div>
+                </div>
+              </Carousel.Item>
+            );
+          })}
         </Carousel>
       </div>
     </div>

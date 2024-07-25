@@ -8,7 +8,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import Aos from "aos";
 import Testimonals from "../components/Testimonals";
-import prePlanImg from "../assests/images/Pre-planning.webp";
+import prePlanImg from "../assests/images/Pre-planning.jpg";
 import whatsappLottie from "../assests/Lottie/whatsapp.json";
 import Lottie from "react-lottie";
 import Button from 'react-bootstrap/Button';
@@ -351,7 +351,7 @@ function Home() {
 
       <Testimonals />
       {/* <Container className="container-width"> */}
-      <div className="center-a-div testimo-bottom-div" data-aos="fade-up">
+      <div className="center-a-div testimo-bottom-div mt-5" data-aos="fade-up">
         <p className="testimo-bottom-text">
           Having shot more than 1000+ weddings in the last eight years, we have
           covered both grandeur royal weddings and humble backyard weddings. Be
@@ -362,7 +362,7 @@ function Home() {
         </p>
       </div>
 
-      {/* <div
+      <div
           className="mt-5 d-flex justify-content-center align-items-center"
           data-aos="fade-up"
         >
@@ -370,8 +370,8 @@ function Home() {
             <p className="home-headings text-center mb-0">Our Process</p>
             <img src={prePlanImg} className="img-fluid" />
           </div>
-        </div> */}
-      <div className="contact-us-container" data-aos="fade-up">
+        </div>
+      <div className="contact-us-container" >
         <div className="background-filter"></div>
         <div className="content-wrapper">
           <p
@@ -437,7 +437,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="center-a-div mt-5 pb-4" data-aos="fade-up">
+      <div className="center-a-div pb-4" >
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1070.7986293303582!2d78.09882859070137!3d9.906424701679676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c50e6ac0f2c3%3A0x794eec4e6d6fdb30!2sDream%20big%20studio!5e0!3m2!1sen!2sin!4v1721150053666!5m2!1sen!2sin"
           width="100%"
