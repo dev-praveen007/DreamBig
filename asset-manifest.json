@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DreamBigStudio/static/css/main.81c464be.css",
-    "main.js": "/DreamBigStudio/static/js/main.d187303c.js",
+    "main.css": "/DreamBigStudio/static/css/main.2ca6a7e3.css",
+    "main.js": "/DreamBigStudio/static/js/main.e74b0e21.js",
     "static/js/453.08161e9b.chunk.js": "/DreamBigStudio/static/js/453.08161e9b.chunk.js",
     "static/media/DJI_0398.jpg": "/DreamBigStudio/static/media/DJI_0398.0ba175a25ace3c9f6dc0.jpg",
     "static/media/DJI_0443.jpg": "/DreamBigStudio/static/media/DJI_0443.243d68e4decd79d253ed.jpg",
@@ -17,12 +17,12 @@
     "static/media/WhatsApp Image 2022-10-12 at 2_09_34 PM.webp": "/DreamBigStudio/static/media/WhatsApp Image 2022-10-12 at 2_09_34 PM.cb91b0a0c59912631130.webp",
     "static/media/DB-studio.png": "/DreamBigStudio/static/media/DB-studio.8cf3cdd88b84ae7d1256.png",
     "index.html": "/DreamBigStudio/index.html",
-    "main.81c464be.css.map": "/DreamBigStudio/static/css/main.81c464be.css.map",
-    "main.d187303c.js.map": "/DreamBigStudio/static/js/main.d187303c.js.map",
+    "main.2ca6a7e3.css.map": "/DreamBigStudio/static/css/main.2ca6a7e3.css.map",
+    "main.e74b0e21.js.map": "/DreamBigStudio/static/js/main.e74b0e21.js.map",
     "453.08161e9b.chunk.js.map": "/DreamBigStudio/static/js/453.08161e9b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81c464be.css",
-    "static/js/main.d187303c.js"
+    "static/css/main.2ca6a7e3.css",
+    "static/js/main.e74b0e21.js"
   ]
 }
