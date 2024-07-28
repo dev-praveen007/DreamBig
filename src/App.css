@@ -575,6 +575,9 @@ body::-webkit-scrollbar-thumb {
     padding: 10px;
   }
 
+  .nhai-image{
+    height: 500px;
+  }
 }
 
 
@@ -667,4 +670,26 @@ body::-webkit-scrollbar-thumb {
 .wrap-input-1 .input:focus ~ .focus-border{
   width: 100%;
   transition: 0.4s;
+}
+
+.nhai-image{
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.nhai-text-col{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.nhai-text{
+  font-size: 35px;
+  font-weight: 500;
+  text-shadow: 2px 2px #201f1e42;
 }

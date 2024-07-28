@@ -351,20 +351,21 @@ function Home() {
       </Container>
 
       <Container>
-        <div>
-          <p className="home-headings text-center mb-0">Goverment Project</p>
-
-          <Row>
-            <Col>
-              <p className="testimo-bottom-text">NHAI Project</p>
-              <p className="testimo-bottom-text">Madurai - Natham Flyoverx</p>
+        <div className="mb-5" >
+          <p className="home-headings text-center mb-4">Goverment Project</p>
+          <div
+              className="underline"
+              // data-aos="fade-up"
+            ></div>
+          <Row className="mt-5" >
+            <Col className="nhai-text-col" md={6} >
+              <p className="nhai-text">NHAI Project</p>
+              <p className="nhai-text">Madurai - Natham Flyoverx</p>
             </Col>
 
-            <Col>
-            <div className="nhai-image" >
+            <Col md={6} >
 
-            <img alt="image" src={NHAI1} className=" img-fluid" />
-            </div>
+            <img alt="image" src={NHAI1} className=" nhai-image" />
 
             </Col>
           </Row>
