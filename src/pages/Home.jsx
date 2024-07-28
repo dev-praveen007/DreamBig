@@ -11,10 +11,12 @@ import Testimonals from "../components/Testimonals";
 import prePlanImg from "../assests/images/Pre-planning.jpg";
 import whatsappLottie from "../assests/Lottie/whatsapp.json";
 import Lottie from "react-lottie";
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import Modal from 'react-bootstrap/Modal';
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import Modal from "react-bootstrap/Modal";
 import ContatusModal from "../components/ContactModal";
+import NHAI1 from '../assests/images/DJI_0398.jpg'
+import NHAI2 from '../assests/images/DJI_0443.jpg'
 
 function Home() {
   useEffect(() => {
@@ -24,6 +26,8 @@ function Home() {
       easing: "ease-in-sine",
       delay: 100,
     });
+    // handleShow();
+    // window.scrollTo(0,0 )
   }, []);
 
   const defaultOptions = {
@@ -40,17 +44,13 @@ function Home() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const redirectToWhatsApp = () => {
-    const whatsappURL = `https://wa.me/9585972207?text=""`;
-    
-    window.location.href = whatsappURL;
-  };
-
   return (
     <>
       <Header />
 
-      <button className="booknow-btn" onClick={()=>setShow(!show)} >Book now</button>
+      <button className="booknow-btn" onClick={() => setShow(!show)}>
+        Book now
+      </button>
 
       <div className="d-flex  justify-content-center align-items-center pt-4">
         <Carousel
@@ -65,8 +65,10 @@ function Home() {
             <img alt="FirstImg" className="img-fluid w-100 " src={image2} />
 
             <Carousel.Caption>
-              <p className="h3" >First slide label</p>
-              <p className="carousal-p" >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className="h3">First slide label</p>
+              <p className="carousal-p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item
@@ -88,14 +90,14 @@ function Home() {
             <img alt="FirstImg" className="img-fluid w-100 " src={image4} />
             <Carousel.Caption>
               <p className="h3">Third slide label</p>
-              <p className="carousal-p"> 
-                Praesent com modo cursus magna, vel scelerisque nisl consectetur.
+              <p className="carousal-p">
+                Praesent com modo cursus magna, vel scelerisque nisl
+                consectetur.
               </p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
       </div>
-
 
       <Container className="container-width">
         <div className="middle-back-img">
@@ -127,12 +129,11 @@ function Home() {
           </div>
 
           <Row
-          className="mt-5 d-flex justify-content-between"
+            className="mt-5 d-flex justify-content-between"
             data-aos="fade-up"
           >
-
-            <Col md={6} xs={12} className="center-text-div mb-2" >
-            {/* <div > */}
+            <Col md={6} xs={12} className="center-text-div mb-2">
+              {/* <div > */}
               <p className="home-headings text-center mb-0">Our Mission</p>
               <div className="underline"></div>
               <p className="mt-5 mb-0 lead text-center desc">
@@ -151,11 +152,10 @@ function Home() {
                 quality of our services and set a new trend in the wedding
                 industry.
               </p>
-            {/* </div> */}
+              {/* </div> */}
             </Col>
 
-            <Col md={6} xs={12}  className="center-text-div">
-            
+            <Col md={6} xs={12} className="center-text-div">
               <p className="home-headings text-center mb-0">Our Vision</p>
               <div className="underline"></div>
               <p className="mt-5 mb-0 lead text-center desc">
@@ -171,7 +171,7 @@ function Home() {
               </p>
             </Col>
           </Row>
-{/* 
+          {/* 
           <div
             className="mt-5 d-flex justify-content-between"
             data-aos="fade-up"
@@ -217,6 +217,7 @@ function Home() {
           <div
             className="mt-5 d-flex justify-content-center align-items-center"
             data-aos="fade-up"
+            id="ourSevices"
           >
             <div className="mb-5 our_service">
               <p className="home-headings text-center mb-0">Our Services</p>
@@ -349,33 +350,80 @@ function Home() {
         </div>
       </Container>
 
+      <Container>
+        <div>
+          <p className="home-headings text-center mb-0">Goverment Project</p>
+
+          <Row>
+            <Col>
+              <p className="testimo-bottom-text">NHAI Project</p>
+              <p className="testimo-bottom-text">Madurai - Natham Flyoverx</p>
+            </Col>
+
+            <Col>
+            <div className="nhai-image" >
+
+            <img alt="image" src={NHAI1} className=" img-fluid" />
+            </div>
+
+            </Col>
+          </Row>
+        </div>
+      </Container>
+
       <Testimonals />
       {/* <Container className="container-width"> */}
-      <div className="center-a-div testimo-bottom-div mt-5" data-aos="fade-up">
-        <p className="testimo-bottom-text">
-          Having shot more than 1000+ weddings in the last eight years, we have
-          covered both grandeur royal weddings and humble backyard weddings. Be
-          it elite or ecstatic, we have always been there where there's love.
-          There are reasons why most celebrities and businessmen prefer our
-          services as being there unnoticed and capturing some lively moments
-          are our specialties.
-        </p>
-      </div>
+      <div className="our-process-bg pb-5">
+        <div
+          className="center-a-div testimo-bottom-div mt-5 "
+          data-aos="fade-up"
+        >
+          <p className="testimo-bottom-text">
+            Having shot more than 1000+ weddings in the last eight years, we
+            have covered both grandeur royal weddings and humble backyard
+            weddings. Be it elite or ecstatic, we have always been there where
+            there's love. There are reasons why most celebrities and businessmen
+            prefer our services as being there unnoticed and capturing some
+            lively moments are our specialties.
+          </p>
+        </div>
 
-      <div
+        <div
           className="mt-5 d-flex justify-content-center align-items-center"
           data-aos="fade-up"
         >
           <div className="w-75">
             <p className="home-headings text-center mb-0">Our Process</p>
+            <div
+              className="underline"
+              // data-aos="fade-up"
+            ></div>
             <img src={prePlanImg} className="img-fluid" />
           </div>
         </div>
-      <div className="contact-us-container" >
+      </div>
+
+      <div className="center-a-div ">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1070.7986293303582!2d78.09882859070137!3d9.906424701679676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c50e6ac0f2c3%3A0x794eec4e6d6fdb30!2sDream%20big%20studio!5e0!3m2!1sen!2sin!4v1721150053666!5m2!1sen!2sin"
+          width="100%"
+          height="500"
+          frameborder="0"
+          style={{ border: "1px solid white" }}
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+          title="Google map"
+          loading="lazy"
+        />
+        {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1070.7986293303582!2d78.09882859070137!3d9.906424701679676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c50e6ac0f2c3%3A0x794eec4e6d6fdb30!2sDream%20big%20studio!5e0!3m2!1sen!2sin!4v1721150053666!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
+      </div>
+
+      <div className="contact-us-container">
         <div className="background-filter"></div>
         <div className="content-wrapper">
           <p
-            className="pt-5 mb-0 home-headings text-center fw-500"
+            className="pt-2 mb-0 home-headings text-center fw-500"
             //  data-aos="fade-up"
           >
             Contact us
@@ -390,7 +438,7 @@ function Home() {
             // data-aos="fade-up"
           >
             <Row className="w-100 pb-5">
-              <Col md={4}>
+              <Col md={4} className="mt-2">
                 <div className="">
                   <p className="fs-25 fw-500 text-center">Address</p>
                   <p className="mb-0 text-center desc">
@@ -399,14 +447,14 @@ function Home() {
                   <p className="mb-0 text-center desc">Madurai, Tamil Nadu.</p>
                 </div>
               </Col>
-              <Col md={4}>
+              <Col md={4} className="mt-2">
                 <div className="">
                   <p className="fs-25 fw-500 text-center">Contact</p>
                   <p className="mb-0 text-center desc">+91 98942 11704</p>
                   <p className="mb-0 text-center desc">+91 95859 72207</p>
                 </div>
               </Col>
-              <Col md={4}>
+              <Col md={4} className="mt-2">
                 <div className="">
                   <p className="fs-25 fw-500 text-center">Opening Hours</p>
                   <p className="mb-0 text-center desc">
@@ -437,29 +485,21 @@ function Home() {
         </div>
       </div>
 
-      <div className="center-a-div pb-4" >
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1070.7986293303582!2d78.09882859070137!3d9.906424701679676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c50e6ac0f2c3%3A0x794eec4e6d6fdb30!2sDream%20big%20studio!5e0!3m2!1sen!2sin!4v1721150053666!5m2!1sen!2sin"
-          width="100%"
-          height="500"
-          frameborder="0"
-          style={{ border: "1px solid white" }}
-          allowfullscreen=""
-          aria-hidden="false"
-          tabindex="0"
-          title="Google map"
-        />
-        {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1070.7986293303582!2d78.09882859070137!3d9.906424701679676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c50e6ac0f2c3%3A0x794eec4e6d6fdb30!2sDream%20big%20studio!5e0!3m2!1sen!2sin!4v1721150053666!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
-      </div>
-      <a className="whatsapp-lottie" href={`https://wa.me/9585972207?text=Hi`} target="__blank" >
-
-      <Lottie className="whatsapp-lottie" options={defaultOptions}/>
+      <a
+        className="whatsapp-lottie"
+        href={`https://wa.me/9585972207?text=Hi`}
+        target="__blank"
+      >
+        <Lottie className="whatsapp-lottie" options={defaultOptions} />
       </a>
 
       {/* </Container> */}
 
-        <ContatusModal show={show} handleShow={handleShow} handleClose={handleClose} />
-      
+      <ContatusModal
+        show={show}
+        handleShow={handleShow}
+        handleClose={handleClose}
+      />
     </>
   );
 }

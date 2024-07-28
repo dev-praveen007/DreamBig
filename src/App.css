@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Oswald:wght@200..700&display=swap');
 
 :root {
   --gray_bg: #F9F9F9;
@@ -192,6 +193,7 @@
   margin: 0 155px;
   /* height: 100vh; */
   position: relative;
+  scroll-behavior: smooth;
 }
 
 .center-text-div{
@@ -207,6 +209,13 @@
   width: 65px; /* Adjust the width as needed */
   height: 4px; /* Adjust the height as needed */
   background-color: #000; /* Adjust the color as needed */
+  margin: 10px auto 0;
+}
+
+.underline-white {
+  width: 65px; /* Adjust the width as needed */
+  height: 4px; /* Adjust the height as needed */
+  background-color: #fff; /* Adjust the color as needed */
   margin: 10px auto 0;
 }
 
@@ -340,13 +349,13 @@ body {
 .contact-us-container{
   height: 480px;
   position: relative;
-  padding: 20px;
+  padding: 50px;
   background-color: #fff; 
   overflow: hidden;
-  /* background: url("./assests/images/2023\ logo\ update.jpg") no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed; */
-  /* padding: 80px 0 50px; */
+  background: url("./assests/images/2023\ logo\ update.jpg") ;
+  /* background-size: cover;
+  background-attachment: center; 
+  padding: 80px 0 50px; */
 }
 
 
@@ -392,6 +401,7 @@ body {
 .cus-navbar{
   background-color: #f1b807;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-bottom: 3px solid #665b25;
 }
 
 .booknow-btn{
@@ -437,6 +447,65 @@ body::-webkit-scrollbar-thumb {
   right: 20px;
 }
 
+.modal-exclusive{
+  background: #f1b607d6;
+  padding: 0 20px;
+  color: #000;
+  -webkit-clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%, 8% 50%);
+  clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%, 8% 50%);
+  width: 125px;
+}
+
+.modal-body-bg{
+  position: relative;
+  overflow: hidden;
+  height: 90  vh;
+}
+
+.bg-img{
+  background-image: url('./assests/images/WhatsApp\ Image\ 2022-10-12\ at\ 2_09_34\ PM.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  opacity: 0.5;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  filter: blur(5px);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.modal-con{
+  z-index: 2;
+  position: relative;
+}
+
+.modal-dialog{
+  max-width: 320px !important;
+  left: 15px;
+}
+
+.modal-Heading{
+  font-family: "Playfair Display", serif;
+  font-weight: 700 !important;
+  font-style: normal;
+  margin-bottom: 0;
+  /* font-size: 25px; */
+}
+
+.marg-top{
+  margin-top: -20px !important;
+}
+
+.create-love{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
 
 @keyframes testiAnimatRight{
   from{transform: translateX(-500px);}
@@ -502,4 +571,100 @@ body::-webkit-scrollbar-thumb {
     height: 45px !important;
   }
 
+  .contact-us-container{
+    padding: 10px;
+  }
+
+}
+
+
+.cus-model-input{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding: 10px;
+  letter-spacing: 0.5px;
+  /* border: 0; */
+  padding: 7px 0;
+}
+
+::placeholder {
+  color: rgb(0, 0, 0);
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: rgb(0, 0, 0);
+}
+
+.contact-modal{
+  position: relative;
+  left: 15%;
+}
+
+.modal-close-icon{
+  position: absolute;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 3px 10px;
+  color: var(--black);
+  z-index: 10000;
+  top: -5px;
+  left: 287px;
+  font-size: 19px;
+
+}
+
+.modal-submit-btn{
+  background-color: #f1b807;
+  border: none;
+  /* height: 32px; */
+  /* width: 85px; */
+  border-radius: 100px;
+  /* font-size: 22px; */
+  padding: 6px 25px;
+  font-weight: 500;
+
+}
+
+/* .our-process-bg{
+  background-image: url('./assests/images/Untitled-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: local;
+} */
+
+.wrap-input-1 .input:focus{
+  outline: none;
+}
+.wrap-input-1 {
+  width: 100%;
+  /* margin: 40px 3%; */
+  position: relative;
+}
+.wrap-input-1 .input {
+  border: 0;
+  padding: 7px 0;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+  background-color: transparent;
+}
+.wrap-input-1 .input ~ .focus-border{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f1b807;
+  transition: 0.4s;
+}
+.wrap-input-1 .input:focus ~ .focus-border{
+  width: 100%;
+  transition: 0.4s;
 }
