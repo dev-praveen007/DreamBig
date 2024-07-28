@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DreamBigStudio/static/css/main.31625ae6.css",
-    "main.js": "/DreamBigStudio/static/js/main.e8e64239.js",
+    "main.css": "/DreamBigStudio/static/css/main.287a19fd.css",
+    "main.js": "/DreamBigStudio/static/js/main.4a76cf0c.js",
     "static/js/453.08161e9b.chunk.js": "/DreamBigStudio/static/js/453.08161e9b.chunk.js",
     "static/media/2023 logo update.jpg": "/DreamBigStudio/static/media/2023 logo update.ba724cd23a5f7eb10dc9.jpg",
     "static/media/02-1@2x.png": "/DreamBigStudio/static/media/02-1@2x.76251e917527683b6d86.png",
@@ -15,12 +15,12 @@
     "static/media/WhatsApp Image 2022-10-12 at 2_09_34 PM.webp": "/DreamBigStudio/static/media/WhatsApp Image 2022-10-12 at 2_09_34 PM.cb91b0a0c59912631130.webp",
     "static/media/DB-studio.png": "/DreamBigStudio/static/media/DB-studio.8cf3cdd88b84ae7d1256.png",
     "index.html": "/DreamBigStudio/index.html",
-    "main.31625ae6.css.map": "/DreamBigStudio/static/css/main.31625ae6.css.map",
-    "main.e8e64239.js.map": "/DreamBigStudio/static/js/main.e8e64239.js.map",
+    "main.287a19fd.css.map": "/DreamBigStudio/static/css/main.287a19fd.css.map",
+    "main.4a76cf0c.js.map": "/DreamBigStudio/static/js/main.4a76cf0c.js.map",
     "453.08161e9b.chunk.js.map": "/DreamBigStudio/static/js/453.08161e9b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.31625ae6.css",
-    "static/js/main.e8e64239.js"
+    "static/css/main.287a19fd.css",
+    "static/js/main.4a76cf0c.js"
   ]
 }
