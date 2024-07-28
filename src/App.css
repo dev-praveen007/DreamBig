@@ -594,7 +594,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 ::placeholder {
-  color: rgb(0, 0, 0);
+  color: rgb(62, 62, 62);
   opacity: 1; /* Firefox */
 }
 

@@ -17,6 +17,7 @@ import Modal from "react-bootstrap/Modal";
 import ContatusModal from "../components/ContactModal";
 import NHAI1 from '../assests/images/DJI_0398.jpg'
 import NHAI2 from '../assests/images/DJI_0443.jpg'
+import toast from "react-hot-toast";
 
 function Home() {
   useEffect(() => {
@@ -26,8 +27,8 @@ function Home() {
       easing: "ease-in-sine",
       delay: 100,
     });
-    // handleShow();
-    // window.scrollTo(0,0 )
+    handleShow();
+    window.scrollTo(0,0 )
   }, []);
 
   const defaultOptions = {

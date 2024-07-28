@@ -6,6 +6,7 @@ import emailjs from "@emailjs/browser";
 import InputGroup from "react-bootstrap/InputGroup";
 import { Col, Row } from "react-bootstrap";
 import { MDBInput } from "mdb-react-ui-kit";
+import toast from "react-hot-toast";
 
 function ContatusModal(props) {
   const { show, handleShow, handleClose } = props;
@@ -15,6 +16,9 @@ function ContatusModal(props) {
   const onMessageSend = async (e) => {
     // e.preventdefault()
     try {
+      if(!formData?.Name)return toast.error("Name required");
+      if(!formData?.["Mobile number"])return toast.error("Mobile number required");
+      
       const getData = await emailjs.send(
         "service_8vwe3aw",
         "template_bklv5j3",
@@ -27,8 +31,13 @@ function ContatusModal(props) {
         { publicKey: "eaBSTlTxZU5tbgCLP" }
       );
       console.log("getData", getData, getData?.status);
-      setFormData({});
-      handleClose();
+      toast.success('Successfully updated!')
+
+      setTimeout(()=>{
+        setFormData({});
+        handleClose();
+      },1000)
+
     } catch (e) {
       console.log("errorn on ", e);
       return;
@@ -108,7 +117,7 @@ function ContatusModal(props) {
                      type="text"
                      placeholder="Your emil"  
                      onChange={(e) =>
-                      setFormData({ ...formData, "Eail": e.target.value })
+                      setFormData({ ...formData, "Email": e.target.value })
                      } 
                     />
                     <span className="focus-border"></span>
