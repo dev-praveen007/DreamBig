@@ -364,9 +364,9 @@ function Home() {
               <p className="nhai-text">Madurai - Natham Flyoverx</p>
             </Col>
 
-            <Col md={6} >
+            <Col md={6} className="d-flex justify-content-center" >
 
-            <img alt="image" src={NHAI1} className=" nhai-image" />
+            <img alt="image" src={NHAI2} className=" nhai-image" />
 
             </Col>
           </Row>
@@ -439,8 +439,8 @@ function Home() {
             className="mt-5 d-flex justify-content-center align-items-center"
             // data-aos="fade-up"
           >
-            <Row className="w-100 pb-5">
-              <Col md={4} className="mt-2">
+            <Row className="w-100 mb-3">
+              <Col md={4} className="py-3">
                 <div className="">
                   <p className="fs-25 fw-500 text-center">Address</p>
                   <p className="mb-0 text-center desc">
@@ -449,14 +449,14 @@ function Home() {
                   <p className="mb-0 text-center desc">Madurai, Tamil Nadu.</p>
                 </div>
               </Col>
-              <Col md={4} className="mt-2">
+              <Col md={4} className="py-3">
                 <div className="">
                   <p className="fs-25 fw-500 text-center">Contact</p>
                   <p className="mb-0 text-center desc">+91 98942 11704</p>
                   <p className="mb-0 text-center desc">+91 95859 72207</p>
                 </div>
               </Col>
-              <Col md={4} className="mt-2">
+              <Col md={4} className="py-3">
                 <div className="">
                   <p className="fs-25 fw-500 text-center">Opening Hours</p>
                   <p className="mb-0 text-center desc">
@@ -469,12 +469,40 @@ function Home() {
           </div>
 
           <div
+            className=" d-flex justify-content-center align-items-center"
+            // data-aos="fade-up"
+          >
+            <Row className="w-100 mb-5">
+              <Col md={6} className="py-3 d-flex align-items-center justify-content-center">
+              <div className="d-flex align-items-center gap-2 ">
+              <i className="bi bi-envelope-at fs-24 "></i>
+              <a className="gmail-footer" href="mailto:dreambigstudio.in@gmail.com" >
+
+              <p className="mb-0">dreambigstudio.in@gmail.com</p>
+              </a>
+            </div>
+              </Col>
+              <Col md={6} className="py-3">
+              <div className="social-media-div">
+              <i className="bi bi-instagram fs-24 "></i>
+              <i className="bi bi-facebook fs-24 "></i>
+              <i className="bi bi-youtube fs-24 "></i>
+              <i className="bi bi-whatsapp fs-24 "></i>
+            </div>
+              </Col>
+            </Row>
+          </div>
+
+          {/* <div
             className="d-flex justify-content-evenly align-items-center"
             // data-aos="fade-up"
           >
             <div className="d-flex align-items-center gap-2 ">
               <i className="bi bi-envelope-at fs-24 "></i>
+              <a href="mailto:dreambigstudio.in@gmail.com" >
+
               <p className="mb-0">dreambigstudio.in@gmail.com</p>
+              </a>
             </div>
 
             <div className="social-media-div">
@@ -483,7 +511,7 @@ function Home() {
               <i className="bi bi-youtube fs-24 "></i>
               <i className="bi bi-whatsapp fs-24 "></i>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

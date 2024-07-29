@@ -34,7 +34,7 @@ const Header = () => {
           <Nav.Link href="#ourSevices" className='header-items'>Services</Nav.Link>
           <Nav.Link href="#" onClick={()=>handleShow()} className='header-items'>Contact</Nav.Link>
           {/* <Nav.Link href="#link" className='header-items'>Blog</Nav.Link> */}
-          <Nav.Link href="#home" className='header-items'>PortFolio</Nav.Link>
+          <Nav.Link href="/DreamBigStudio/portfolio" className='header-items'>PortFolio</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Container>

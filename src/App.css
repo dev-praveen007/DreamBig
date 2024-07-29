@@ -347,7 +347,7 @@ body {
 }
 
 .contact-us-container{
-  height: 480px;
+  /* height: 480px; */
   position: relative;
   padding: 50px;
   background-color: #fff; 
@@ -576,7 +576,11 @@ body::-webkit-scrollbar-thumb {
   }
 
   .nhai-image{
-    height: 500px;
+      height: 430px !important;
+  }
+
+  .nhai-text{
+    font-size: 26px !important;
   }
 }
 
@@ -605,6 +609,7 @@ body::-webkit-scrollbar-thumb {
 .contact-modal{
   position: relative;
   left: 15%;
+  margin-top: 10px;
 }
 
 .modal-close-icon{
@@ -674,7 +679,7 @@ body::-webkit-scrollbar-thumb {
 
 .nhai-image{
   height: 600px;
-  width: 100%;
+  width: 96%;
   object-fit: cover;
   border-radius: 20px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -693,3 +698,51 @@ body::-webkit-scrollbar-thumb {
   font-weight: 500;
   text-shadow: 2px 2px #201f1e42;
 }
+
+.gmail-footer{
+  text-decoration: none;
+  color: #000;
+}
+
+.gallery{
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+  padding: 0 10px;
+}
+
+.gallery .pics{
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  margin-bottom: 12px;
+}
+
+.portfolio-div{
+  background: url('./assests/images/Untitled-1.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@media (max-width: 991px) {
+  .gallery{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery{
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+
