@@ -344,15 +344,24 @@ body {
 
 .header-items{
   color: #000 !important;
+  text-decoration: none;
+  margin-bottom: 0;
+
+}
+
+.link-tag{
+  padding: 0.5rem 0;
+  padding-right: 0px;
+  padding-left: 7px;
 }
 
 .contact-us-container{
   /* height: 480px; */
   position: relative;
   padding: 50px;
-  background-color: #fff; 
+  background-color: #f1b807;
   overflow: hidden;
-  background: url("./assests/images/2023\ logo\ update.jpg") ;
+  /* background: url("./assests/images/2023\ logo\ update.jpg") ; */
   /* background-size: cover;
   background-attachment: center; 
   padding: 80px 0 50px; */
@@ -581,6 +590,10 @@ body::-webkit-scrollbar-thumb {
 
   .nhai-text{
     font-size: 26px !important;
+  }
+  .link-tag{
+  padding-left: 0;
+
   }
 }
 

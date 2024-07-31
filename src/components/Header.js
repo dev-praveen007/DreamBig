@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import ContatusModal from './ContactModal';
-
+import {Link} from 'react-router-dom'
 const Header = () => {
   const [show, setShow] = useState(false);
 
@@ -24,17 +24,17 @@ const Header = () => {
     // </div>
     <Navbar expand="lg" className="cus-navbar">
     <Container>
-      <Navbar.Brand href="#home">
+      <Link to="/" >
         <img alt='Header' src={LogoImgg} className='header-icon' />
-      </Navbar.Brand>
+      </Link>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto">
-          <Nav.Link href="#home" className='header-items'>About</Nav.Link>
+          <Nav.Link href="#aboutus" className='header-items'>About</Nav.Link>
           <Nav.Link href="#ourSevices" className='header-items'>Services</Nav.Link>
           <Nav.Link href="#" onClick={()=>handleShow()} className='header-items'>Contact</Nav.Link>
           {/* <Nav.Link href="#link" className='header-items'>Blog</Nav.Link> */}
-          <Nav.Link href="/DreamBigStudio/portfolio" className='header-items'>PortFolio</Nav.Link>
+          <Link to="/portfolio" className='header-items link-tag'>PortFolio</Link>
         </Nav>
       </Navbar.Collapse>
     </Container>

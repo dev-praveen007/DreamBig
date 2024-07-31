@@ -115,7 +115,7 @@ function Home() {
             className="mt-5 d-flex justify-content-center align-items-center"
             data-aos="fade-up"
           >
-            <div className="center-text-div">
+            <div className="center-text-div" id="aboutus" >
               <p className="home-headings text-center mb-0">About us</p>
               <div className="underline"></div>
               <p className="mt-5 mb-0 lead text-center desc">
@@ -421,11 +421,12 @@ function Home() {
         {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1070.7986293303582!2d78.09882859070137!3d9.906424701679676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c50e6ac0f2c3%3A0x794eec4e6d6fdb30!2sDream%20big%20studio!5e0!3m2!1sen!2sin!4v1721150053666!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
       </div>
 
+
       <div className="contact-us-container">
         <div className="background-filter"></div>
         <div className="content-wrapper">
           <p
-            className="pt-2 mb-0 home-headings text-center fw-500"
+            className=" mb-0 home-headings text-center fw-500"
             //  data-aos="fade-up"
           >
             Contact us
@@ -436,11 +437,11 @@ function Home() {
           ></div>
 
           <div
-            className="mt-5 d-flex justify-content-center align-items-center"
+            className="pt-5 d-flex justify-content-center align-items-center"
             // data-aos="fade-up"
           >
             <Row className="w-100 mb-3">
-              <Col md={4} className="py-3">
+              <Col md={4} className="">
                 <div className="">
                   <p className="fs-25 fw-500 text-center">Address</p>
                   <p className="mb-0 text-center desc">
@@ -449,14 +450,14 @@ function Home() {
                   <p className="mb-0 text-center desc">Madurai, Tamil Nadu.</p>
                 </div>
               </Col>
-              <Col md={4} className="py-3">
+              <Col md={4} className="">
                 <div className="">
                   <p className="fs-25 fw-500 text-center">Contact</p>
                   <p className="mb-0 text-center desc">+91 98942 11704</p>
                   <p className="mb-0 text-center desc">+91 95859 72207</p>
                 </div>
               </Col>
-              <Col md={4} className="py-3">
+              <Col md={4} className="">
                 <div className="">
                   <p className="fs-25 fw-500 text-center">Opening Hours</p>
                   <p className="mb-0 text-center desc">
@@ -469,11 +470,11 @@ function Home() {
           </div>
 
           <div
-            className=" d-flex justify-content-center align-items-center"
+            className="py-3 d-flex justify-content-center align-items-center"
             // data-aos="fade-up"
           >
-            <Row className="w-100 mb-5">
-              <Col md={6} className="py-3 d-flex align-items-center justify-content-center">
+            <Row className="w-100">
+              <Col md={6} className="d-flex align-items-center justify-content-center">
               <div className="d-flex align-items-center gap-2 ">
               <i className="bi bi-envelope-at fs-24 "></i>
               <a className="gmail-footer" href="mailto:dreambigstudio.in@gmail.com" >
@@ -482,7 +483,7 @@ function Home() {
               </a>
             </div>
               </Col>
-              <Col md={6} className="py-3">
+              <Col md={6} className="">
               <div className="social-media-div">
               <i className="bi bi-instagram fs-24 "></i>
               <i className="bi bi-facebook fs-24 "></i>

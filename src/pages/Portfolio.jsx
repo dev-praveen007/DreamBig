@@ -24,6 +24,7 @@ import Header from "../components/Header";
 import ContatusModal from "../components/ContactModal";
 import whatsappLottie from "../assests/Lottie/whatsapp.json";
 import Lottie from "react-lottie";
+import { Col, Row } from "react-bootstrap";
 
 function Portfolio() {
   const arr = [
@@ -109,8 +110,8 @@ function Portfolio() {
       <button className="booknow-btn" onClick={() => setShow(!show)}>
         Book now
       </button>
-      <div className="portfolio-div">
-      <div className="w-100 pt-5 d-flex justify-content-center align-items-center portfolio-div">
+      <div className="py-5">
+      {/* <div className="w-100 pt-5 d-flex justify-content-center align-items-center">
         <div className=" w-75 mb-5 our_service">
           <p className="home-headings text-center mb-0">Portfolio</p>
           <div className="underline"></div>
@@ -121,7 +122,7 @@ function Portfolio() {
             heartfelt moments that bring your special day to life.
           </p>
         </div>
-      </div>
+      </div> */}
       <div className="gallery">
         {arr.map((val, i) => {
           return (
@@ -131,6 +132,100 @@ function Portfolio() {
           );
         })}
       </div>
+      </div>
+
+      <div className="contact-us-container">
+        <div className="background-filter"></div>
+        <div className="content-wrapper">
+          <p
+            className=" mb-0 home-headings text-center fw-500"
+            //  data-aos="fade-up"
+          >
+            Contact us
+          </p>
+          <div
+            className="underline"
+            // data-aos="fade-up"
+          ></div>
+
+          <div
+            className="pt-5 d-flex justify-content-center align-items-center"
+            // data-aos="fade-up"
+          >
+            <Row className="w-100 mb-3">
+              <Col md={4} className="">
+                <div className="">
+                  <p className="fs-25 fw-500 text-center">Address</p>
+                  <p className="mb-0 text-center desc">
+                    No 35, 1st floor, Vasantha Nagar, 1st Street,
+                  </p>
+                  <p className="mb-0 text-center desc">Madurai, Tamil Nadu.</p>
+                </div>
+              </Col>
+              <Col md={4} className="">
+                <div className="">
+                  <p className="fs-25 fw-500 text-center">Contact</p>
+                  <p className="mb-0 text-center desc">+91 98942 11704</p>
+                  <p className="mb-0 text-center desc">+91 95859 72207</p>
+                </div>
+              </Col>
+              <Col md={4} className="">
+                <div className="">
+                  <p className="fs-25 fw-500 text-center">Opening Hours</p>
+                  <p className="mb-0 text-center desc">
+                    Monday - Saturday 09:30 am - 08:00 pm
+                  </p>
+                  <p className="mb-0 text-center desc">​Sunday Closed</p>
+                </div>
+              </Col>
+            </Row>
+          </div>
+
+          <div
+            className="py-3 d-flex justify-content-center align-items-center"
+            // data-aos="fade-up"
+          >
+            <Row className="w-100">
+              <Col md={6} className="d-flex align-items-center justify-content-center">
+              <div className="d-flex align-items-center gap-2 ">
+              <i className="bi bi-envelope-at fs-24 "></i>
+              <a className="gmail-footer" href="mailto:dreambigstudio.in@gmail.com" >
+
+              <p className="mb-0">dreambigstudio.in@gmail.com</p>
+              </a>
+            </div>
+              </Col>
+              <Col md={6} className="">
+              <div className="social-media-div">
+              <i className="bi bi-instagram fs-24 "></i>
+              <i className="bi bi-facebook fs-24 "></i>
+              <i className="bi bi-youtube fs-24 "></i>
+              <i className="bi bi-whatsapp fs-24 "></i>
+            </div>
+              </Col>
+            </Row>
+          </div>
+
+          {/* <div
+            className="d-flex justify-content-evenly align-items-center"
+            // data-aos="fade-up"
+          >
+            <div className="d-flex align-items-center gap-2 ">
+              <i className="bi bi-envelope-at fs-24 "></i>
+              <a href="mailto:dreambigstudio.in@gmail.com" >
+
+              <p className="mb-0">dreambigstudio.in@gmail.com</p>
+              </a>
+            </div>
+
+            <div className="social-media-div">
+              <i className="bi bi-instagram fs-24 "></i>
+              <i className="bi bi-facebook fs-24 "></i>
+              <i className="bi bi-youtube fs-24 "></i>
+              <i className="bi bi-whatsapp fs-24 "></i>
+            </div>
+          </div> */}
+        </div>
       </div>
       <a
         className="whatsapp-lottie"
