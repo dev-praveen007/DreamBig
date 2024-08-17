@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DreamBigStudio/static/css/main.3fca2c21.css",
-    "main.js": "/DreamBigStudio/static/js/main.b1e9508c.js",
+    "main.css": "/DreamBigStudio/static/css/main.ba3049fe.css",
+    "main.js": "/DreamBigStudio/static/js/main.60cb0480.js",
     "static/js/453.08161e9b.chunk.js": "/DreamBigStudio/static/js/453.08161e9b.chunk.js",
     "static/media/8530.jpg": "/DreamBigStudio/static/media/8530.90ba8136212bb557e2ff.jpg",
     "static/media/DBS_7173_2.jpg": "/DreamBigStudio/static/media/DBS_7173_2.d372740f711bc93d4f6b.jpg",
@@ -35,12 +35,12 @@
     "static/media/WhatsApp Image 2022-10-17 at 5_49_edited (1).webp": "/DreamBigStudio/static/media/WhatsApp Image 2022-10-17 at 5_49_edited (1).da0e8299f077c33231fa.webp",
     "static/media/DB-studio.png": "/DreamBigStudio/static/media/DB-studio.8cf3cdd88b84ae7d1256.png",
     "index.html": "/DreamBigStudio/index.html",
-    "main.3fca2c21.css.map": "/DreamBigStudio/static/css/main.3fca2c21.css.map",
-    "main.b1e9508c.js.map": "/DreamBigStudio/static/js/main.b1e9508c.js.map",
+    "main.ba3049fe.css.map": "/DreamBigStudio/static/css/main.ba3049fe.css.map",
+    "main.60cb0480.js.map": "/DreamBigStudio/static/js/main.60cb0480.js.map",
     "453.08161e9b.chunk.js.map": "/DreamBigStudio/static/js/453.08161e9b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fca2c21.css",
-    "static/js/main.b1e9508c.js"
+    "static/css/main.ba3049fe.css",
+    "static/js/main.60cb0480.js"
   ]
 }
