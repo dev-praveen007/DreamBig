@@ -205,6 +205,8 @@
   font-weight: 330;
 }
 
+
+
 .underline {
   width: 65px; /* Adjust the width as needed */
   height: 4px; /* Adjust the height as needed */
@@ -239,6 +241,7 @@ body {
   object-fit: cover;
   width: 280px;
   border: 4px solid #0000001a;
+  height: 380px;
   /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
@@ -303,7 +306,8 @@ body {
 
 
 .testimon-full-cont{
-  background: url("./assests/images/01-1-1@2x.png") no-repeat center center;
+  /* background: url("./assests/images/01.jpg") no-repeat center center; */
+  background-color: #2e27076f;
   background-size: cover;
   background-attachment: fixed;
   padding: 80px 0 50px;
@@ -324,7 +328,7 @@ body {
 }
 
 .header-icon{
-  height: 55px !important; 
+  height: 65px !important; 
 }
 
 
@@ -336,11 +340,19 @@ body {
 }
 
 .social-media-div{
-  display: flex;
+  display: grid;
   justify-content: center;
   gap: 30px;
   align-items: center;
 }
+
+.social-media-div2{
+  display: grid;
+  justify-content: center;
+  gap: 42px;
+  align-items: center;
+}
+
 
 .header-items{
   color: #000 !important;
@@ -594,6 +606,9 @@ body::-webkit-scrollbar-thumb {
   .link-tag{
   padding-left: 0;
 
+  }
+  .footer-contact{
+    margin-top: 45px !important;
   }
 }
 

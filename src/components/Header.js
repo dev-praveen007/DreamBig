@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import LogoImgg from '../assests/images/DB-studio.png';
+import LogoImgg from '../assests/images/web.png';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';

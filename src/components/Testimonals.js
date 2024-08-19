@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Carousel } from "react-bootstrap";
 import image2 from "../assests/images/jkskfd.webp";
 import image1 from "../assests/images/Candid Photography.webp";
-import image3 from "../assests/images/02-1@2x.png";
+import image3 from "../assests/images/02.jpg";
 import image4 from "../assests/images/WhatsApp Image 2022-10-12 at 2_09_34 PM.webp";
 
 function Testimonals() {

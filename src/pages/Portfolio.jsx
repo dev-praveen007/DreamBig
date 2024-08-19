@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-import img1 from "../assests/images/01-1-1@2x.png";
-import img2 from "../assests/images/02-1@2x.png";
+import img1 from "../assests/images/01.jpg";
+import img2 from "../assests/images/02.jpg";
 import img3 from "../assests/images/03-1@2x.png";
-import img4 from "../assests/images/04-1@2x.png";
-import img5 from "../assests/images/05-1@2x (1).png";
+import img4 from "../assests/images/04.jpg";
+import img5 from "../assests/images/05.jpg";
 import img6 from "../assests/images/2023 logo update.jpg";
 import img7 from "../assests/images/LEE_5269 (2)_JPG.webp";
 import img8 from "../assests/images/P3860954.webp";
@@ -25,6 +25,7 @@ import ContatusModal from "../components/ContactModal";
 import whatsappLottie from "../assests/Lottie/whatsapp.json";
 import Lottie from "react-lottie";
 import { Col, Row } from "react-bootstrap";
+import { Footer } from "../components/Footer";
 
 function Portfolio() {
   const arr = [
@@ -133,100 +134,7 @@ function Portfolio() {
         })}
       </div>
       </div>
-
-      <div className="contact-us-container">
-        <div className="background-filter"></div>
-        <div className="content-wrapper">
-          <p
-            className=" mb-0 home-headings text-center fw-500"
-            //  data-aos="fade-up"
-          >
-            Contact us
-          </p>
-          <div
-            className="underline"
-            // data-aos="fade-up"
-          ></div>
-
-          <div
-            className="pt-5 d-flex justify-content-center align-items-center"
-            // data-aos="fade-up"
-          >
-            <Row className="w-100 mb-3">
-              <Col md={4} className="">
-                <div className="">
-                  <p className="fs-25 fw-500 text-center">Address</p>
-                  <p className="mb-0 text-center desc">
-                    No 35, 1st floor, Vasantha Nagar, 1st Street,
-                  </p>
-                  <p className="mb-0 text-center desc">Madurai, Tamil Nadu.</p>
-                </div>
-              </Col>
-              <Col md={4} className="">
-                <div className="">
-                  <p className="fs-25 fw-500 text-center">Contact</p>
-                  <p className="mb-0 text-center desc">+91 98942 11704</p>
-                  <p className="mb-0 text-center desc">+91 95859 72207</p>
-                </div>
-              </Col>
-              <Col md={4} className="">
-                <div className="">
-                  <p className="fs-25 fw-500 text-center">Opening Hours</p>
-                  <p className="mb-0 text-center desc">
-                    Monday - Saturday 09:30 am - 08:00 pm
-                  </p>
-                  <p className="mb-0 text-center desc">​Sunday Closed</p>
-                </div>
-              </Col>
-            </Row>
-          </div>
-
-          <div
-            className="py-3 d-flex justify-content-center align-items-center"
-            // data-aos="fade-up"
-          >
-            <Row className="w-100">
-              <Col md={6} className="d-flex align-items-center justify-content-center">
-              <div className="d-flex align-items-center gap-2 ">
-              <i className="bi bi-envelope-at fs-24 "></i>
-              <a className="gmail-footer" href="mailto:dreambigstudio.in@gmail.com" >
-
-              <p className="mb-0">dreambigstudio.in@gmail.com</p>
-              </a>
-            </div>
-              </Col>
-              <Col md={6} className="">
-              <div className="social-media-div">
-              <i className="bi bi-instagram fs-24 "></i>
-              <i className="bi bi-facebook fs-24 "></i>
-              <i className="bi bi-youtube fs-24 "></i>
-              <i className="bi bi-whatsapp fs-24 "></i>
-            </div>
-              </Col>
-            </Row>
-          </div>
-
-          {/* <div
-            className="d-flex justify-content-evenly align-items-center"
-            // data-aos="fade-up"
-          >
-            <div className="d-flex align-items-center gap-2 ">
-              <i className="bi bi-envelope-at fs-24 "></i>
-              <a href="mailto:dreambigstudio.in@gmail.com" >
-
-              <p className="mb-0">dreambigstudio.in@gmail.com</p>
-              </a>
-            </div>
-
-            <div className="social-media-div">
-              <i className="bi bi-instagram fs-24 "></i>
-              <i className="bi bi-facebook fs-24 "></i>
-              <i className="bi bi-youtube fs-24 "></i>
-              <i className="bi bi-whatsapp fs-24 "></i>
-            </div>
-          </div> */}
-        </div>
-      </div>
+      <Footer />
       <a
         className="whatsapp-lottie"
         href={`https://wa.me/9585972207?text=Hi`}
